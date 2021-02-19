@@ -25,39 +25,39 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libncurses5-dev \
     libncursesw5-dev \
     libreadline-dev \
-	libsqlite3-dev \
-	libssl-dev \
-	libtiff5-dev \
-	libtk8.6 \
-	libwebp-dev \
-	libxml2-dev \
-	llvm \
-	make \
-	mpack \
-	nginx \
-	p7zip-full \
-	p7zip-rar \
-	pgadmin3 \
-	rar \
-	redis-server \
-	sharutils \
-	tk8.6 \
-	tk8.6-dev \
-	unace \
-	unrar \
-	unzip \
-	uudeview \
-	wget \
-	zip \
-	zlib1g-dev \
-	xclip \
-	libgdal-dev \
-	nodejs \
-	graphviz \
-	libgraphviz-dev \
-	pkg-config \
-	nano \
-	postgresql-client
+    libsqlite3-dev \
+    libssl-dev \
+    libtiff5-dev \
+    libtk8.6 \
+    libwebp-dev \
+    libxml2-dev \
+    llvm \
+    make \
+    mpack \
+    nginx \
+    p7zip-full \
+    p7zip-rar \
+    pgadmin3 \
+    rar \
+    redis-server \
+    sharutils \
+    tk8.6 \
+    tk8.6-dev \
+    unace \
+    unrar \
+    unzip \
+    uudeview \
+    wget \
+    zip \
+    zlib1g-dev \
+    xclip \
+    libgdal-dev \
+    nodejs \
+    graphviz \
+    libgraphviz-dev \
+    pkg-config \
+    nano \
+    postgresql-client
 
 RUN useradd -p $(openssl passwd -1 password) -m administrador && usermod -aG sudo administrador
 
