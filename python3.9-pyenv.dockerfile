@@ -5,7 +5,7 @@ LABEL maintainer="Igor Oak <igbrch@gmail.com>"
 ENV LANG C.UTF-8
 ENV HOME "/home/administrador"
 
-RUN apt-get update && apt-get install sudo software-properties-common -y && add-apt-repository ppa:git-core/ppa -y && sudo add-apt-repository ppa:chris-lea/redis-server -y && sudo add-apt-repository ppa:nginx/stable -y
+RUN apt-get update && apt-get install sudo software-properties-common -y && add-apt-repository ppa:git-core/ppa -y && sudo add-apt-repository ppa:chris-lea/redis-server -y
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-utils \
