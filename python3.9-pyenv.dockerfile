@@ -67,6 +67,6 @@ WORKDIR $HOME
 
 RUN git clone https://github.com/yyuu/pyenv.git $HOME/.pyenv
 
-RUN . $HOME/.bashrc && pyenv install 3.9.0 && pyenv global 3.9.0 && pyenv rehash
+RUN . $HOME/.bashrc && pyenv install 3.9.2 && pyenv global 3.9.2 && pyenv rehash
 
 RUN . $HOME/.bashrc && pip3 install -U pip setuptools wheel pipenv django
